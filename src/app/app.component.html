@@ -1,0 +1,8 @@
+<tui-root>
+  <div class="app-container">
+    <app-item-list
+      *ngIf="!togglePage"
+      (changePage)="toggle($event)"></app-item-list>
+    <app-basket *ngIf="togglePage" (changePage)="toggle($event)"></app-basket>
+  </div>
+</tui-root>
